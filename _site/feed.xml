@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-27T01:19:03+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dinesh Babu</title><subtitle>Software Engineer specializing in distributed systems</subtitle><author><name>Dinesh Babu</name></author><entry><title type="html">Migrating from JGroups to gRPC at 500+ node scale</title><link href="http://localhost:4000/blog/2025/01/15/jgroups-to-grpc-migration/" rel="alternate" type="text/html" title="Migrating from JGroups to gRPC at 500+ node scale" /><published>2025-01-15T00:00:00+05:30</published><updated>2025-01-15T00:00:00+05:30</updated><id>http://localhost:4000/blog/2025/01/15/jgroups-to-grpc-migration</id><content type="html" xml:base="http://localhost:4000/blog/2025/01/15/jgroups-to-grpc-migration/"><![CDATA[<p>This is a sample first post. Replace this content with your own writing.</p>
+
+<h2 id="why-were-migrating">Why we’re migrating</h2>
+
+<p>JGroups served us well at smaller cluster sizes, but as we approach 500+ nodes
+the N² connection problem becomes a real constraint…</p>
+
+<h2 id="what-we-evaluated">What we evaluated</h2>
+
+<ul>
+  <li><strong>etcd</strong> for coordination and leader election</li>
+  <li><strong>NATS</strong> for messaging (hub-and-spoke instead of full mesh)</li>
+  <li><strong>Consul</strong> for service discovery</li>
+</ul>
+
+<h2 id="the-decision">The decision</h2>
+
+<p>…</p>]]></content><author><name>Dinesh Babu</name></author><summary type="html"><![CDATA[Why we're replacing JGroups, what we evaluated, and the architectural trade-offs that mattered most.]]></summary></entry></feed>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Migrating from JGroups to gRPC at 500+ node scale — Dinesh Babu</title>
+  <meta name="description" content="Why we're replacing JGroups, what we evaluated, and the architectural trade-offs that mattered most." />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Migrating from JGroups to gRPC at 500+ node scale | Dinesh Babu</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Migrating from JGroups to gRPC at 500+ node scale" />
+<meta name="author" content="Dinesh Babu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Why we’re replacing JGroups, what we evaluated, and the architectural trade-offs that mattered most." />
+<meta property="og:description" content="Why we’re replacing JGroups, what we evaluated, and the architectural trade-offs that mattered most." />
+<link rel="canonical" href="http://localhost:4000/blog/2025/01/15/jgroups-to-grpc-migration/" />
+<meta property="og:url" content="http://localhost:4000/blog/2025/01/15/jgroups-to-grpc-migration/" />
+<meta property="og:site_name" content="Dinesh Babu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-01-15T00:00:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Migrating from JGroups to gRPC at 500+ node scale" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dinesh Babu"},"dateModified":"2025-01-15T00:00:00+05:30","datePublished":"2025-01-15T00:00:00+05:30","description":"Why we’re replacing JGroups, what we evaluated, and the architectural trade-offs that mattered most.","headline":"Migrating from JGroups to gRPC at 500+ node scale","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2025/01/15/jgroups-to-grpc-migration/"},"url":"http://localhost:4000/blog/2025/01/15/jgroups-to-grpc-migration/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="/" class="nav-home">db</a>
+      <div class="nav-links">
+        <a href="/" >about</a>
+        <a href="/blog/" class="active">writing</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="post">
+  <header class="post-header">
+    <time datetime="2025-01-15T00:00:00+05:30">January 15, 2025</time>
+    <h1>Migrating from JGroups to gRPC at 500+ node scale</h1>
+    <p class="post-desc">Why we're replacing JGroups, what we evaluated, and the architectural trade-offs that mattered most.</p>
+  </header>
+  <div class="post-content">
+    <p>This is a sample first post. Replace this content with your own writing.</p>
+
+<h2 id="why-were-migrating">Why we’re migrating</h2>
+
+<p>JGroups served us well at smaller cluster sizes, but as we approach 500+ nodes
+the N² connection problem becomes a real constraint…</p>
+
+<h2 id="what-we-evaluated">What we evaluated</h2>
+
+<ul>
+  <li><strong>etcd</strong> for coordination and leader election</li>
+  <li><strong>NATS</strong> for messaging (hub-and-spoke instead of full mesh)</li>
+  <li><strong>Consul</strong> for service discovery</li>
+</ul>
+
+<h2 id="the-decision">The decision</h2>
+
+<p>…</p>
+
+  </div>
+  <footer class="post-footer">
+    <a href="/blog/">← all posts</a>
+  </footer>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>Dinesh Babu</span>
+    <div class="footer-links">
+      
+      
+      
+    </div>
+  </footer>
+</body>
+</html>
