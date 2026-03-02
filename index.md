@@ -11,14 +11,8 @@ description: Software engineer specializing in distributed systems
     <div class="profile-tagline">Software Engineer · Distributed Systems</div>
     <div class="profile-bio">
       <p>
-        8 years building distributed systems. Currently leading an SDK migration
-        from JGroups to gRPC for a 500+ node deployment — working through
+        8 years of building software systems. Currently leading building SDK for cluster management and messaging to support scaling large node deployment — working through
         leader election, cluster membership, and dynamic topic coordination at scale.
-      </p>
-      <p>
-        I work on systems where N² connection problems are real constraints,
-        where consensus matters, and where a wrong architectural call at 50 nodes
-        becomes a crisis at 500.
       </p>
     </div>
   </div>
@@ -33,21 +27,73 @@ description: Software engineer specializing in distributed systems
   </div>
 
   <div class="section">
-    <div class="section-label">experience</div>
+    <div class="section-label">journey</div>
     <ul class="work-list">
       <li class="work-item">
         <div>
-          <div class="work-role">Lead - Product Engineering</div>
+          <div class="work-role">Pluggable SDK for Cluster Management</div>
           <div class="work-company">Zoho Corporation</div>
         </div>
-        <div class="work-period">2021 – present</div>
+        <div class="work-period">now</div>
+        <div class="work-desc">
+          Leading a team building a pluggable SDK for cluster management and messaging —
+          leveraging etcd, NATS.io, and other backend tools to support large-scale node deployments.
+        </div>
       </li>
       <li class="work-item">
         <div>
-          <div class="work-role">Member Technical Staff</div>
+          <div class="work-role">Disaster Recovery for Distributed Framework</div>
           <div class="work-company">Zoho Corporation</div>
         </div>
-        <div class="work-period">2017 – 2021</div>
+        <div class="work-period">lead</div>
+        <div class="work-desc">
+          Led a team of three to evolve the distributed system framework to support disaster recovery
+          scenarios. Owned the low-level and system design for the project end-to-end.
+        </div>
+      </li>
+      <li class="work-item">
+        <div>
+          <div class="work-role">Code Reviews & Developer Guidance</div>
+          <div class="work-company">Zoho Corporation</div>
+        </div>
+        <div class="work-period"></div>
+        <div class="work-desc">
+          Started guiding junior developers and took ownership of code reviews
+          for our team-owned module.
+        </div>
+      </li>
+      <li class="work-item">
+        <div>
+          <div class="work-role">Monolith → Distributed System</div>
+          <div class="work-company">Zoho Corporation</div>
+        </div>
+        <div class="work-period"></div>
+        <div class="work-desc">
+          <span class="work-highlight">Major individual contribution</span> — converted an on-prem
+          software's monolithic architecture to a distributed system supporting cluster management,
+          load balancing, and health monitoring. Done end-to-end with guidance from my manager.
+        </div>
+      </li>
+      <li class="work-item">
+        <div>
+          <div class="work-role">Reusable Framework Components</div>
+          <div class="work-company">Zoho Corporation</div>
+        </div>
+        <div class="work-period"></div>
+        <div class="work-desc">
+          Migrated client pages into reusable framework components to improve consistency
+          and reduce duplication across the product.
+        </div>
+      </li>
+      <li class="work-item">
+        <div>
+          <div class="work-role">Log Forwarding Integration</div>
+          <div class="work-company">Zoho Corporation</div>
+        </div>
+        <div class="work-period">start</div>
+        <div class="work-desc">
+          Integrated log forwarding to ship application logs to SIEM products as a junior developer.
+        </div>
       </li>
     </ul>
   </div>
@@ -63,7 +109,7 @@ description: Software engineer specializing in distributed systems
       <span class="tag">ZooKeeper</span>
       <span class="tag">NATS</span>
       <span class="tag">Consul</span>
-      <span class="tag">Raft / ZAB</span>
+      <span class="tag">Raft</span>
       <span class="tag">Kubernetes</span>
       <span class="tag">Traefik</span>
     </div>

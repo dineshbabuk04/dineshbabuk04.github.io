@@ -189,6 +189,19 @@ main {
   padding-top: 0.15rem;
 }
 
+.work-desc {
+  grid-column: 1 / -1;
+  font-size: 0.85rem;
+  color: var(--text);
+  margin-top: 0.25rem;
+  line-height: 1.6;
+}
+
+.work-highlight {
+  color: var(--accent-2);
+  font-weight: 400;
+}
+
 /* ─── Links section ────────────────────────────────────────── */
 .link-list { list-style: none; }
 .link-list li {
