@@ -7,7 +7,9 @@
   padding: 0;
 }
 
-:root {
+/* ─── Themes ────────────────────────────────────────────────── */
+:root,
+[data-theme="dark"] {
   --bg: #0d0f12;
   --bg-2: #141720;
   --border: #1e2330;
@@ -20,6 +22,21 @@
   --sans: 'IBM Plex Sans', sans-serif;
   --max-w: 680px;
   --gutter: 1.5rem;
+  --toggle-bg: transparent;
+  --toggle-border: #2a3040;
+}
+
+[data-theme="light"] {
+  --bg: #f5f6f8;
+  --bg-2: #eceef2;
+  --border: #d4d8e2;
+  --text: #3c4050;
+  --text-dim: #8892a4;
+  --text-head: #1a1d26;
+  --accent: #2a7de1;
+  --accent-2: #2aaa80;
+  --toggle-bg: transparent;
+  --toggle-border: #c8cdd8;
 }
 
 html {
@@ -96,6 +113,43 @@ a:hover {
 
 .nav-links a.active {
   color: var(--accent);
+}
+
+/* ─── Theme Toggle ─────────────────────────────────────────── */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--toggle-border);
+  border-radius: 3px;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1;
+  padding: 0.2rem 0.4rem;
+  transition: color 0.15s, border-color 0.15s;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle:hover {
+  color: var(--text-head);
+  border-color: var(--text-dim);
+}
+
+/* Show moon icon in dark mode, sun icon in light mode */
+[data-theme="dark"] .theme-icon-light {
+  display: none;
+}
+
+[data-theme="dark"] .theme-icon-dark {
+  display: inline;
+}
+
+[data-theme="light"] .theme-icon-dark {
+  display: none;
+}
+
+[data-theme="light"] .theme-icon-light {
+  display: inline;
 }
 
 /* ─── Main ─────────────────────────────────────────────────── */

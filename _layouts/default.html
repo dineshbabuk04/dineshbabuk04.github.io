@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,15 +9,30 @@
   {% seo %}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = stored || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
+
 <body>
   <header class="site-header">
     <nav>
       <a href="{{ '/' | relative_url }}" class="nav-home">db</a>
       <div class="nav-links">
-        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>about</a>
+        <a href="{{ '/' | relative_url }}" {% if page.url=='/' %}class="active" {% endif %}>about</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+          <span class="theme-icon theme-icon-dark">&#9790;</span>
+          <span class="theme-icon theme-icon-light">&#9788;</span>
+        </button>
       </div>
     </nav>
   </header>
@@ -28,10 +44,26 @@
   <footer class="site-footer">
     <span>{{ site.author.name }}</span>
     <div class="footer-links">
-      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank">github</a>{% endif %}
-      {% if site.author.linkedin %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">linkedin</a>{% endif %}
-      {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">twitter</a>{% endif %}
+      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank">github</a>{%
+      endif %}
+      {% if site.author.linkedin %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}"
+        target="_blank">linkedin</a>{% endif %}
+      {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">twitter</a>{%
+      endif %}
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('theme-toggle');
+      btn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
 </body>
+
 </html>
