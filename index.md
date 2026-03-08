@@ -53,17 +53,6 @@ description: Software engineer specializing in distributed systems
       </li>
       <li class="work-item">
         <div>
-          <div class="work-role">Code Reviews & Developer Guidance</div>
-          <div class="work-company">Zoho Corporation</div>
-        </div>
-        <div class="work-period"></div>
-        <div class="work-desc">
-          Started guiding junior developers and took ownership of code reviews
-          for our team-owned module.
-        </div>
-      </li>
-      <li class="work-item">
-        <div>
           <div class="work-role">Monolith → Distributed System</div>
           <div class="work-company">Zoho Corporation</div>
         </div>
@@ -74,45 +63,53 @@ description: Software engineer specializing in distributed systems
           load balancing, and health monitoring. Done end-to-end with guidance from my manager.
         </div>
       </li>
-      <li class="work-item">
-        <div>
-          <div class="work-role">Reusable Framework Components</div>
-          <div class="work-company">Zoho Corporation</div>
-        </div>
-        <div class="work-period"></div>
-        <div class="work-desc">
-          Migrated client pages into reusable framework components to improve consistency
-          and reduce duplication across the product.
-        </div>
-      </li>
-      <li class="work-item">
-        <div>
-          <div class="work-role">Log Forwarding Integration</div>
-          <div class="work-company">Zoho Corporation</div>
-        </div>
-        <div class="work-period">start</div>
-        <div class="work-desc">
-          Integrated log forwarding to ship application logs to SIEM products as a junior developer.
-        </div>
-      </li>
     </ul>
   </div>
 
   <div class="section">
     <div class="section-label">stack</div>
-    <div class="tags">
-      <span class="tag highlight">distributed systems</span>
-      <span class="tag highlight">gRPC</span>
-      <span class="tag highlight">Java</span>
-      <span class="tag">JGroups</span>
-      <span class="tag">etcd</span>
-      <span class="tag">ZooKeeper</span>
-      <span class="tag">NATS</span>
-      <span class="tag">Consul</span>
-      <span class="tag">Raft</span>
-      <span class="tag">Kubernetes</span>
-      <span class="tag">Traefik</span>
+
+    <div class="stack-group">
+      <div class="stack-group-label">languages</div>
+      <div class="tags">
+        <span class="tag highlight">Java</span>
+        <span class="tag">C</span>
+        <span class="tag tag-dim" title="Worked on, not extremely proficient">C++ <span class="tag-note">~</span></span>
+      </div>
     </div>
+
+    <div class="stack-group">
+      <div class="stack-group-label">databases</div>
+      <div class="tags">
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">MSSQL</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <div class="stack-group-label">distributed systems</div>
+      <div class="tags">
+        <span class="tag highlight">distributed systems</span>
+        <span class="tag highlight">gRPC</span>
+        <span class="tag">etcd</span>
+        <span class="tag">NATS</span>
+        <span class="tag">ZooKeeper</span>
+        <span class="tag">Consul</span>
+        <span class="tag">Raft</span>
+        <span class="tag">JGroups</span>
+        <span class="tag">Kubernetes</span>
+        <span class="tag">Traefik</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <div class="stack-group-label">identity & access</div>
+      <div class="tags">
+        <span class="tag">Active Directory</span>
+        <span class="tag">Identity Management</span>
+      </div>
+    </div>
+
   </div>
 
   <div class="section">
@@ -120,15 +117,7 @@ description: Software engineer specializing in distributed systems
     <ul class="link-list">
       <li>
         <span class="link-label">github</span>
-        <a href="https://github.com/<!-- your handle -->" target="_blank">github.com/<!-- your handle --></a>
-      </li>
-      <li>
-        <span class="link-label">linkedin</span>
-        <a href="https://linkedin.com/in/<!-- your handle -->" target="_blank">linkedin.com/in/<!-- your handle --></a>
-      </li>
-      <li>
-        <span class="link-label">email</span>
-        <a href="mailto:<!-- your email -->"><!-- your email --></a>
+        <a href="https://github.com/dineshbabuk04/" target="_blank">github.com/dineshbabuk04</a>
       </li>
     </ul>
   </div>
